@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroControl SCADA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>AeroControl SCADA</h1>
+
+    <div id="sensor-data">
+        <div class="data-card">
+            <h2>Temperature</h2>
+            <p id="temperature">-- °C</p>
+        </div>
+        <div class="data-card">
+            <h2>Wind Speed</h2>
+            <p id="windSpeed">-- km/h</p>
+        </div>
+        <div class="data-card">
+            <h2>Turbine Status</h2>
+            <p id="turbineStatus">--</p>
+        </div>
+    </div>
+
+    <div class="charts">
+        <canvas id="temperatureChart" width="400" height="200"></canvas>
+        <canvas id="windSpeedChart" width="400" height="200"></canvas>
+    </div>
+
+    <button id="toggle-turbine">Toggle Turbine</button>
+
+    <footer>
+        <p>© 2024 RhinoGuard-Tech</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
